@@ -34,6 +34,11 @@ docker compose up -d
 
 Open Jenkins by going to: [http://localhost:8080/](http://localhost:8080/) and finish the installation process.
 
+To get the admin password use the following command
+```
+docker exec jenkins-docker cat /var/jenkins_home/secrets/initialAdminPassword
+```
+
 ## Step 5
 
 If you wish to stop Jenkins and get back to it later, run:
